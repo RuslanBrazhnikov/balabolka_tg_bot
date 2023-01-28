@@ -3,6 +3,7 @@ from config import TOKEN_API
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove, InlineKeyboardButton, \
     InlineKeyboardMarkup
 from random import randrange
+from keyboard import *
 
 
 async def on_startup(_):
@@ -16,7 +17,7 @@ HELP_COMMAND = """
 <b>/help</b> - <em>эт список команд</em>
 <b>/start</b> - <em>эт работа с ботом</em>
 <b>/give</b> - <em>эт смешной котик</em>
-<b>/photo</b> - <em>получи картинку</em>
+<b>/photo</b> - <em>смешные картинки</em>
 <b>/video</b> - <em>смотреть видосы</em>
 <b>/description</b> - <em>описание нашего Бота</em>
 <b>/random</b> - <em>рандомная точка на карте</em>
@@ -63,6 +64,21 @@ async def send_random(message: types.Message):
 async def send_image(message: types.Message):
     await bot.send_photo(message.from_user.id,
                          photo='https://avatars.mds.yandex.net/i?id=b7ef3175e2c995dffb4375572d0ce3addcce373f-8159483'
+                               '-images-thumbs&n=13')
+    await bot.send_photo(message.from_user.id,
+                         photo='https://avatars.mds.yandex.net/i?id=8aed7330f249e8d98c49164de95d48690c3f4cd6-7664017'
+                               '-images-thumbs&n=13')
+    await bot.send_photo(message.from_user.id,
+                         photo='https://avatars.mds.yandex.net/i?id=a25c61dceb1f3003b8c94565a5fba8062538e391-7546766'
+                               '-images-thumbs&n=13')
+    await bot.send_photo(message.from_user.id,
+                         photo='https://avatars.mds.yandex.net/i?id=924f041201570074ad8c9dd59b64b79e3e528045-4432629'
+                               '-images-thumbs&n=13')
+    await bot.send_photo(message.from_user.id,
+                         photo='https://avatars.mds.yandex.net/i?id=f31eaa6cb18a33b9edc0130979755a7f1ab3429f-7662450'
+                               '-images-thumbs&n=13')
+    await bot.send_photo(message.from_user.id,
+                         photo='https://avatars.mds.yandex.net/i?id=035a07477ea72c151600db296b7c8a21c2d1052d-8249766'
                                '-images-thumbs&n=13')
 
 
